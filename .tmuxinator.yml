@@ -1,0 +1,10 @@
+name: core-utils
+root: ./
+
+pre_window: nix develop
+
+startup_window: Editor
+
+windows:
+  - Editor: nvim
+  - Run & Build: clear
