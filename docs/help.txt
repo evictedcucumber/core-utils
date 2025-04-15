@@ -1,0 +1,8 @@
+Usage:
+  rls [options] [files...]
+
+META OPTIONS:
+  -h, --help        show list of command-line options
+  -v, --version     show version of rls
+
+OPTIONS:
