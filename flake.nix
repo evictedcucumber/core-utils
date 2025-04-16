@@ -14,18 +14,14 @@
       };
     in {
       devShells.${system}.default = pkgs.mkShell {
+        name = "core-utils";
         packages = with pkgs; [
           (rust-bin.stable.latest.default.override {
             extensions = [ "rust-src" ];
           })
+          rust-analyzer
           zsh
         ];
-
-        shellHook = ''
-          if [[ "$(basename "$0")" != "zsh" ]]; then
-              exec ${pkgs.zsh}/bin/zsh -l
-          fi
-        '';
       };
 
     };
